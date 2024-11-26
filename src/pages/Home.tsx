@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Sun, Battery, Brain, MessageSquare, ChevronDown, ChevronUp, Zap, Leaf, Recycle } from 'lucide-react';
+import image from "./../images/image.jpg";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -123,7 +124,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Desenvolvedora</h2>
             <div className="flex flex-col items-center">
               <img
-                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200&h=200"
+                src={image}
                 alt="Mariana dos Santos Leite"
                 className="w-32 h-32 rounded-full object-cover mb-4 hover:scale-105 transition-transform duration-300"
               />
